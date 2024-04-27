@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="format-detection" content="telephone=no"/>
+		<title>르노삼성자동차 e-Commerce</title>
+		<link rel="stylesheet" type="text/css" href="../css/font.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/review.css" />
+		<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.4.0.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function (){
+				$('.popupDim').delay(2500).fadeOut(400);
+			});
+		</script>
+    </head>
+    <body>
+        <!-- wrap -->
+        <div id="wrap">
+       		<!---->
+        	<div id="header">
+                <h1>계약서 미리보기</h1>
+        	</div>
+       		<!---->
+            <div id="container">
+            	<section>
+                    <div class="reportView">
+						<article>
+							<img src="../images/reportView1.png" alt="" />
+							<img src="../images/reportView2.png" alt="" />
+							<img src="../images/reportView3.png" alt="" />
+							<img src="../images/reportView4.png" alt="" />
+							<img src="../images/reportView5.png" alt="" />
+							<!---->
+							<div class="btnSet">
+								<button class="btnL gray" onClick="location.href='step.html'">취소</button>
+								<button class="btnL yellow" onClick="location.href='step06_finish.html'">계약서를 제출합니다</button>
+							</div>
+							<!---->
+						</article>
+                    </div>
+            	</section>
+            </div>
+            <!---->
+        </div>
+        <!-- //wrap -->
+		<div class="popupDim" style="display:block;">
+			<!-- basic Alert Popup -->
+			<div class="toastPop">
+				<p>계약서 내용 확인 후<br>반드시 [제출] 버튼을 클릭하여<br>내 차 온라인 구매를 완료해주세요.</p>
+				<span>본 팝업은 2초 후 자동으로 없어집니다</span>
+			</div>
+			<!-- //basic Alert Popup -->
+		</div>
+    </body>
+</html>

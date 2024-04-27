@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no"/>
+		<title>르노삼성자동차 e-Commerce</title>
+		<link rel="stylesheet" type="text/css" href="../css/font.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.4.0.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function (){
+			var agreeSelect ;
+			$('.agreeList li div').click(function(){
+				var agreeSelect = $(this).attr('class');
+				$('.fullPopup').css('display','block');
+				$('.fullPopup .fcontents').load('agree_data.html',function(){
+					if ( agreeSelect == 'agreeBtn1'){
+						$('.agreeDTBack').hide();
+						$('#agreeArea1').show();
+					} else if ( agreeSelect == 'agreeBtn2'){
+						$('.agreeDTBack').hide();
+						$('#agreeArea2').show();
+					} else if ( agreeSelect == 'agreeBtn3'){
+						$('.agreeDTBack').hide();
+						$('#agreeArea3').show();
+					} else if ( agreeSelect == 'agreeBtn4'){
+						$('.agreeDTBack').hide();
+						$('#agreeArea4').show();
+					} else if ( agreeSelect == 'agreeBtn5'){
+						$('.agreeDTBack').hide();
+						$('#agreeArea5').show();
+					} else if ( agreeSelect == 'agreeBtn6'){
+						$('.agreeDTBack').hide();
+						$('#agreeArea6').show();
+					}else if ( agreeSelect == 'agreeBtn7'){
+						$('.agreeDTBack').hide();
+						$('#agreeArea7').show();
+					}else if ( agreeSelect == 'agreeBtn8'){
+						$('.agreeDTBack').hide();
+						$('#agreeArea8').show();
+					}else if ( agreeSelect == 'agreeBtn9'){
+						$('.agreeDTBack').hide();
+						$('#agreeArea9').show();
+					}else if ( agreeSelect == 'agreeBtn10'){
+						$('.agreeDTBack').hide();
+						$('#agreeArea10').show();
+					}else if ( agreeSelect == 'agreeBtn11'){
+						$('.agreeDTBack').hide();
+						$('#agreeArea11').show();
+					}
+				});
+				$('body').css('overflow','hidden');
+			});
+			$(".fullPopup .btnclose").click(function(){
+				$('.agreeDTBack').hide();
+				$('.fullPopup').hide();
+				$('body').css('overflow','inherit');
+			}); //팝업닫기 샘플
+		});
+		</script>
+    </head>
+    <body>
+        <!-- wrap -->
+        <div id="wrap">
+       		<!--
+        	<div id="header">
+                <button class="btnBack">이전</button>
+                <h1>내 차 온라인 구매</h1>
+        	</div>-->
+			<div class="stepBack">
+				<div class="step step5">
+					<span class="now"><em>Step 1</em></span>
+					<span><em>Step 2</em></span>
+					<span><em>Step 3</em></span>
+					<span><em>Step 4</em></span>
+					<span><em>Step 5</em></span>
+				</div>
+        	</div>
+       		<!---->
+            <div id="container" class="stepCase">
+            	<section>
+                    <div class="agreeLayout">
+						<article>
+							<!-- 2020-06-09 전면 수정 -->
+							<h2>개인정보 수집&middot;이용&middot;제공 동의 약관</h2>
+							<!-- 모두동의 삭제 -->
+							<h3>[필수적 동의]</h3>
+							<div class="agreeList">
+								<ul>
+									<li>
+										<span class="checkSet big" id="checkSet">
+											<input type="checkbox" id="chk1">
+											<label for="chk1"><i></i></label>
+										</span>
+										<div class="agreeBtn1">개인정보 수집&middot;이용에 대한 동의</div>
+									</li>
+									<li>
+										<span class="checkSet big">
+											<input type="checkbox" id="chk2">
+											<label for="chk2"><i></i></label>
+										</span>
+										<div class="agreeBtn2">고유식별정보 수집&middot;이용에 대한 동의</div>
+									</li>
+									<li>
+										<span class="checkSet big">
+											<input type="checkbox" id="chk3">
+											<label for="chk3"><i></i></label>
+										</span>
+										<div class="agreeBtn3">개인정보 제3자 제공에 대한 동의</div>
+									</li>
+									<li>
+										<span class="checkSet big">
+											<input type="checkbox" id="chk4">
+											<label for="chk4"><i></i></label>
+										</span>
+										<div class="agreeBtn4">고유식별정보 제3자 제공에 대한 동의</div>
+									</li>
+								</ul>
+							</div>
+							<h3>[선택적 동의]</h3>
+							<div class="agreeList">
+								<ul>
+									<li>
+										<span class="checkSet big">
+											<input type="checkbox" id="chk5">
+											<label for="chk5"><i></i></label>
+										</span>
+										<div class="agreeBtn5">고유식별정보 수집&middot;이용에 대한 동의</div>
+									</li>
+									<li>
+										<span class="checkSet big">
+											<input type="checkbox" id="chk6">
+											<label for="chk6"><i></i></label>
+										</span>
+										<div class="agreeBtn6">고유식별정보 제3자 제공에 대한 동의</div>
+									</li>
+									<li>
+										<span class="checkSet big">
+											<input type="checkbox" id="chk7">
+											<label for="chk7"><i></i></label>
+										</span>
+										<div class="agreeBtn7">민감정보 수집&middot;이용에 대한 동의</div>
+									</li>
+									<li>
+										<span class="checkSet big">
+											<input type="checkbox" id="chk8">
+											<label for="chk8"><i></i></label>
+										</span>
+										<div class="agreeBtn8">민감정보 제3자 제공에 대한 동의</div>
+									</li>
+									<li>
+										<span class="checkSet big">
+											<input type="checkbox" id="chk9">
+											<label for="chk9"><i></i></label>
+										</span>
+										<div class="agreeBtn9">개인정보 수집&middot;이용에 대한 동의</div>
+									</li>
+									<li>
+										<span class="checkSet big">
+											<input type="checkbox" id="chk10">
+											<label for="chk10"><i></i></label>
+										</span>
+										<div class="agreeBtn10">광고성 정보 수신에 대한 동의</div>
+									</li>
+									<li class="rciCase">
+										<span class="checkSet big">
+											<input type="checkbox" id="chk11">
+											<label for="chk11"><i></i></label>
+										</span>
+										<div class="agreeBtn11">
+											개인정보 제3자 제공에 대한 동의
+											<em>지불조건이 할부인 경우, 자동차할부금융 서비스제공을 위해 RCI Korea에 정보제공동의가 필요합니다.</em><!-- 2020-04-22 -->
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- //2020-06-09 전면 수정 -->
+							<h3 class="last">[안내]</h3>
+							<div class="agreeList">
+								<ul>
+									<li>
+										<div class="agreeBtn12">개인정보의 취급&middot;위탁 안내</div>
+									</li>
+								</ul>
+							</div>
+							<p>※ 상세한 내용은 르노삼성자동차(주) 홈페이지 (http://www.renaultsamsungm.com) 「개인정보 취급방침」에서 확인할 수 있습니다.</p>
+							<div class="agreeDate"><p>본인은 본 동의서의 내용을 상세히 읽고 충분히 이해하여 이에 동의합니다. 2019년 99 월 99 일</p></div>
+							<!---->
+							<div class="signSet">
+								<div class="signItem name"><!-- 2020-05-06 -->
+									<p>고객님의 이름은 반드시 3획 이상 작성해주시기 바랍니다.</p><!-- 2020-05-06 -->
+									<div>
+										<span class="signDim" style="display:none">서명활성화 버튼을 이용하여<br/>서명오염을 방지합니다.</span>
+										<span></span>
+										<strong>홍길동</strong><!-- 2020-05-06 -->
+									</div>
+									<button class="btnS lineYellow">전체삭제</button>
+									<button class="btnS lineYellow">부분삭제</button>
+									<button class="btnS lineGray singToggleBtn">서명활성화</button>
+								</div>
+								<div class="signItem">
+									<div>
+										<span class="signDim">서명활성화 버튼을 이용하여<br/>서명오염을 방지합니다.</span>
+										<span></span>
+										<strong><em>매수인</em>서명</strong>
+									</div>
+									<button class="btnS lineYellow">전체삭제</button>
+									<button class="btnS lineYellow">부분삭제</button>
+									<button class="btnS lineGray singToggleBtn">서명활성화</button>
+								</div>
+							</div>
+							<!--<div class="recantBtn"><button class="btnS yellow">계약철회 신청하기</button></div> 2020-04-23-->
+							<!---->
+							<div class="btnSet">
+								<button class="btnL gray" onClick="location.href='step.html'">이전</button>
+								<button class="btnL yellow" onClick="location.href='step02_contract.html'">다음</button>
+							</div>
+							<!---->
+						</article>
+                    </div>
+            	</section>
+            </div>
+            <!---->
+        </div>
+        <!-- //wrap -->
+		<div class="fullPopup" style="display:none;">
+			<div class="fheader">
+				<button class="btnclose"></button>
+				<h1>개인정보 수집&middot;이용&middot;제공 동의 약관 전문보기</h1>
+			</div>
+			<div class="fcontents"></div>
+		</div>
+    </body>
+</html>

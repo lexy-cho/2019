@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko" class="loginCase">
+	<head>
+		<meta charset="UTF-8"> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>르노삼성자동차 SSMS</title>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.btnLogin').click(function(){
+					confirm('존재하지 않은 계정입니다.\n아이디와 패스워드를 확인해 주세요.');
+				}); // 로그인버튼 클릭 시
+			});
+		</script>
+	</head>
+	<body class="loginCase">
+
+		<div id="login">
+			<div class="loginLayout">
+				<div class="loginForm">
+					<h1>관리자 로그인</h1>
+					<p>르노삼성자동차 SSMS 관리시스템 입니다.</p>
+					<form>
+						<div class="inputBox">
+							<input type="text" placeholder="ID"  />
+						</div>
+						<div class="inputBox">
+							<input type="password" placeholder="Password" />
+						</div>
+						<div>
+							<span class="checkSet">
+								<input type="checkbox" name="test" value="" checked />
+								<label><i></i>아이디 저장</label>
+							</span>
+						</div>
+						<button type="button" onClick="location.href='tps_list.html'" class="btnLogin">Login</button>
+					</form>							
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

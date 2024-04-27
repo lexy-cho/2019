@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* =================================================================================
+* INFORMATION
+* -----------------------------------------------------------------------
+* @File Name: common.css
+* @Version: 1.0
+* @Descration: 공통 레이아웃 / 컴포넌트 / 팝업 정의 / 공통 반응형 대응
+* @Create Date: 2019-01-30
+* @Update Date: N/A
+* @History: N/A
+* ================================================================================= */
+
+/* ====================== */
+/* TT UI library */
+/* ====================== */
+
+/* ===== Default ===== */
+hr {display:none;}
+dl,ul,ol,menu,li {list-style:none;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,label,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0;box-sizing:border-box;}
+body, * {font-family:'RenaultSamsungMotors', 'Noto Sans';-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;word-break:keep-all;-webkit-appearance:none;-webkit-border-radius:0;}
+html, body {height:100%;font-size:30px;color:#444;-webkit-margin-start:0;-webkit-padding-start:0px;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;}
+/*html {height:100vh;set viewport constraint min-height: 100%;enforce height}*/
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after {content:"";content:none;}
+a {text-decoration:none; -webkit-tap-highlight-color: rgba(0,0,0,0.0);}
+a img {border:none;}
+img {vertical-align: top;}
+address, caption, cite, code, dfn, em, th, var {font-style:normal;font-weight:normal;}
+caption {display:none;}
+button {outline:0 none;}
+fieldset {display:block;border:0;}
+fieldset legend {display:none;}
+input, button {-webkit-appearance:none;}
+input:focus,
+select:focus,
+textarea:focus {outline:none;}
+.skip-navigation a {display:block;height:1px;width:1px;margin:0 -1px -1px 0;padding:0;overflow:hidden;font-size:0;line-height:0;}
+.skip-navigation a:hover,.skip-navigation a:active,.skip-navigation a:focus {position:fixed;top:0;left:0;width:100%;height:auto;padding:8px 0 12px;font-weight:bold;font-size:14px;color:#fff;/* font-family:Tahoma; */line-height:1;text-align:center;text-decoration:none;background:black;}
+sup {position:relative;right:-0.3rem;top:0.4rem;margin:0 0.5rem 0 0;display:inline-block;width:0.4rem;height:0.4rem;text-indent:-9999px;vertical-align:top;overflow:hidden;border-radius:50%;background: url('../images/i_must.svg') no-repeat right top;background-size:auto 100%;}
+/* ===== Interval ===== */
+/* align */
+.left {float:left;}
+.right {float:right;}
+.tL {text-align:left !important;}
+.tR {text-align:right !important;}
+.tC {text-align:center !important;}
+.hide {display:none;}
+.ovHide {overflow:hidden;}
+.txtLine {text-decoration:underline;}
+/* space */
+.pd0 {padding:0;}
+.mg0 {margin:0 !important;}
+/* width */
+.wHalf {width:50%; !important}
+.wFull {width:100%;}
+.wAuto {width:auto;}
+/* ===== components ===== */
+/* Button */
+.btnL {display:inline-block;width:100%;height:3.57rem;text-align:center;line-height:3.2;font-size:1.15rem;font-weight:600;border:none;}
+.btnL.yellow {color:#463e37;background:#ffcc33;}
+.btnM {display:inline-block;width:17.57rem;height:2.85rem;text-align:center;line-height:2.7;border-radius:1.78rem;border:none;}
+.btnS {display:inline-block;width:5.92rem;height:2.15rem;text-align:center;line-height:2.2;border-radius:1.15rem;border:none;}
+.btnS.gray {color:#333;background:#fff;}
+.btnXS {display:inline-block;width:5rem;height:1.85rem;color:#fff;border-radius:1rem;border:none;display:inline-block;background:#999;}
+.yellow {color:#000;background:#ffcc33;}
+.btnM.red,
+.btnS.red {color:#fff;background:#e85252;}
+.btnL.blue,
+.btnM.blue,
+.btnS.blue {color:#fff;background:#36a9e0;}
+.btnL.lineYellow,
+.btnM.lineYellow,
+.btnS.lineYellow {color:#ffcc33;border:1px solid #ffcc33;background:#fff;}
+.btnL.lineBlue,
+.btnM.lineBlue,
+.btnS.lineBlue {color:#36a9e0;border:1px solid #36a9e0;background:#fff;}
+.lineGray {color:#000;border:1px solid #ccc;background:#fff;}
+.btnL:disabled,
+.btnM:disabled,
+.btnS:disabled,
+.btnXS:disabled {color:#ccc;background:#eee;}
+
+/* ===== Font Guide ===== */
+/* size (MyRN Zeplin > px > rem)
+   12sp > 12px > 0.86rem    |   14sp > 14px > 1rem   |   16sp > 16sp > 1.15rem   |   18sp > 18px > 1.3rem
+   22sp > 22px > 1.57rem    |   24sp > 24px > 1.7rem   |   26sp > 26px > 1.85rem   |   28sp > 28px > 2rem
+
+/* Text Size */
+h1 {font-size:1.15rem;font-weight:bold;}
+h2 {padding:1rem 0;font-size:1rem;font-weight:bold;}
+h3 {font-size:0.86rem;font-weight:normal;}
+
+/* ===== Grid ===== */
+.gridSet {display:table;width:100%;box-sizing:border-box;}
+.gridItem {display:table-cell;width:100%;vertical-align:middle;box-sizing:border-box;}
+.gridSet.grid2 .gridItem {width:50%;padding:0 0 0 0;}
+.gridSet.grid2 .gridItem:first-child {padding:0 0 0 0;}
+.gridSet.grid3 .gridItem {width:33.3%;padding:0 0 0 0;}
+.gridSet.grid3 .gridItem:first-child {padding:0 0 0 0;}
+.gridSet.grid3 .gridItem:nth-child(2) {width:33.4%;padding:0 0 0 0;}
+.gridSet.grid4 .gridItem {width:25%;padding:0 0 0 0;}
+/**/
+.pageLoading {position:fixed;z-index:30000;top:0;bottom:0;left:0;right:0;background:rgba(0,0,0,.2);}
+@keyframes spinner {
+	to {transform: rotate(360deg);}
+}
+@-webkit-keyframes spinner {
+	to {-webkit-transform: rotate(360deg);}
+}
+.spinner {position: absolute;width:80px;height:80px;top:50%;left:50%;margin:-40px 0 0 -40px;min-width: 80px;min-height: 80px;}
+.spinner:before {content: 'Loading…';position: absolute;top: 50%;left: 50%;width: 80px;height: 80px;margin-top: -40px;margin-left: -40px;}
+.spinner:not(:required):before {content: '';border-radius: 50%;border: 3px solid #fff;border-top-color: #ffcc33;animation: spinner .6s linear infinite;-webkit-animation: spinner .6s linear infinite;}
+/**/
+.errorWrap {position:absolute;display:table;top:0;bottom:0;left:0;right:0;width:100%;height:100%;background:url('../images/pattern_rsm03.png') repeat 70% bottom;}
+.errorWrap div {display:table-cell;width:100%;height:100%;padding:0 3rem;text-align:center;vertical-align:middle;line-height:normal;}
+.errorWrap strong {color:#fff;font-size:8.5rem;}
+.errorWrap strong strong {color:#ffcc33;}
+.errorWrap span {color:#fff;font-size:3rem;}
+.errorWrap p {margin:0;padding:2rem 0 2rem;color:#fff;opacity:.7;font-size:1.1rem;line-height:1.6rem;}
+.errorWrap button {width:10rem;}
+/* ====================== */
+/* Common Layout */
+/* ====================== */
+/**/
+/* #wrap {width:100%;height:100%;} */
+#header {position:fixed;top:0;width:100%;height:3.4rem;line-height:3;border-bottom:1px solid #eee;background:#fff;z-index:99;}
+#header h1 {text-align:center;font-size:1.15rem;font-weight:bold;}
+#container {padding-top:3.4rem;}
+/**/
+.reportView img {width:100%;}
+.reportView .btnSet {clear:both;width:100%;*zoom:1;}
+.reportView .btnSet:after {content:"";display:block;clear:both;}
+.reportView .btnSet [class*=btn] {float:left;}
+.reportView .btnSet [class*=btn]:first-child {width:30%;}
+.reportView .btnSet [class*=btn]:last-child {width:70%;}

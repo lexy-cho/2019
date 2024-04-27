@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no"/>
+		<title>르노삼성자동차 e-Commerce</title>
+		<link rel="stylesheet" type="text/css" href="../css/font.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.4.0.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script>
+		$(document).ready(function (){
+			$('.popupbtn').click(function(){
+				$('.popupDim').css('display','block');
+			});
+			$('.fpopupbtn').click(function(){
+				$('.fullPopup').css('display','block');
+			});
+			$('.btnclose').click(function(){
+				$('.popupDim').css('display','none');
+				$('.fullPopup').css('display','none');
+			});
+		});
+		</script>
+		<style>
+			.componentLayout {padding:10px;}
+			.componentLayout  table {width:100%;border:1px solid #eee;border-collapse:collapse;}
+			.componentLayout  table th {border:1px solid #eee;padding:5px;text-align:center;}
+			.componentLayout  table td {border:1px solid #eee;padding:10px;}
+			.componentLayout  button {margin:5px 0;}
+		</style>
+    </head>
+    <body>
+        <!-- wrap -->
+        <div id="wrap">
+       		<!-- <div id="header">
+                <button class="btnBack">이전</button>
+                <h1>비밀번호 설정</h1>
+        	</div> -->
+       		<!---->
+            <div id="container">
+            	<section>
+                <div class="componentLayout">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Button_large</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="btnL yellow">Button</button>
+                                    <button class="btnL blue">Button</button>
+									<button class="btnL" disabled>Button</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Button_medium</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="btnM yellow">Button</button>
+                                    <button class="btnM red">Button</button>
+                                    <button class="btnM blue">Button</button>
+                                    <button class="btnM lineYellow">Button</button>
+                                    <button class="btnM lineBlue">Button</button>
+                                    <button class="btnM lineGray">Button</button>
+									<button class="btnM" disabled>Button</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Button_small</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="btnS yellow">Button</button>
+                                    <button class="btnS red">Button</button>
+                                    <button class="btnS blue">Button</button>
+                                    <button class="btnS gray">Button</button>
+                                    <button class="btnS lineYellow">Button</button>
+                                    <button class="btnS lineBlue">Button</button>
+                                    <button class="btnS lineGray">Button</button>
+									<button class="btnS" disabled>Button</button>
+                                </td>
+                            </tr>
+							<tr>
+								<th>Button_xsmall</th>
+							</tr>
+							<tr>
+								<td>
+									<button class="btnXS">중복확인</button>
+									<button class="btnXS" disabled>중복확인</button>
+								</td>
+							</tr>
+                            <tr>
+                                <th>menu_dropdown</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select class="selectSet">
+                                        <option selected>메뉴1</option>
+										<option>메뉴2</option>
+                                    </select>
+									<select class="selectSet" disabled>
+                                        <option selected>메뉴1</option>
+										<option>메뉴2</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>button_radio</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="radioSet">
+                                        <input type="radio" id="radio1" name="rd">
+                                        <label for="radio1"><i></i>Radio Set Sample </label>
+                                    </span>
+                                    <br/>
+                                    <span class="radioSet">
+                                        <input type="radio" id="radio2" name="rd" checked>
+                                        <label for="radio2"><i></i>Radio Set Sample checked</label>
+                                    </span>
+                                    <br/>
+                                    <span class="radioSet">
+                                        <input type="radio" id="radio3" name="rd2" disabled >
+                                        <label for="radio2"><i></i>Radio Set Sample disabled</label>
+                                    </span>
+                                    <br/>
+                                    <span class="radioSet">
+                                        <input type="radio" id="radio4" name="rd2" checked disabled >
+                                        <label for="radio4"><i></i>Radio Set Sample checked disabled</label>
+                                    </span>
+                                    <br/>
+                                    <span class="radioSet big">
+                                        <input type="radio" id="radio5">
+                                        <label for="radio5"><i></i>Radio Set Sample Big</label>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>button_checkbox</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="checkSet">
+                                        <input type="checkbox" id="chk1">
+                                        <label for="chk1"><i></i>Checkbox Set Sample</label>
+                                    </span>
+                                    <br/>
+                                    <span class="checkSet">
+                                        <input type="checkbox" id="chk2" checked>
+                                        <label for="chk2"><i></i>Checkbox Set Sample checked</label>
+                                    </span>
+                                    <br/>
+                                    <span class="checkSet">
+                                        <input type="checkbox" id="chk3" disabled>
+                                        <label for="chk3"><i></i>Checkbox Set Sample disabled</label>
+                                    </span>
+                                    <br/>
+                                    <span class="checkSet">
+                                        <input type="checkbox" id="chk4" disabled checked>
+                                        <label for="chk4"><i></i>Checkbox Set Sample disabled checked</label>
+                                    </span>
+                                    <br/>
+                                    <span class="checkSet big">
+                                        <input type="checkbox" id="chk5">
+                                        <label for="chk5"><i></i>Checkbox Set Sample Big</label>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>popup</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="popupbtn">팝업보기</button>
+									<button class="fpopupbtn">풀스크린 팝업보기</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>step_bar</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="step step3">
+                                        <span class="fin"><em></em></span>
+                                        <span class="now"><em></em></span>
+                                        <span><em></em></span>
+                                    </div>
+                                    <div class="step step6">
+                                        <span class="fin"><em></em></span>
+                                        <span class="fin"><em></em></span>
+                                        <span class="fin"><em></em></span>
+                                        <span class="fin"><em></em></span>
+                                        <span class="now"><em></em></span>
+                                        <span><em></em></span>
+                                    </div>
+                                    <div class="step step7">
+                                        <span class="fin"><em></em></span>
+                                        <span class="fin"><em></em></span>
+                                        <span class="fin"><em></em></span>
+                                        <span class="fin"><em></em></span>
+                                        <span class="fin"><em></em></span>
+                                        <span class="fin"><em></em></span>
+                                        <span class="now"><em></em></span>
+                                    </div>
+                                </td>
+                            </tr>
+							<tr>
+								<th>input</th>
+							</tr>
+							<tr>
+								<td>
+									<label for="inp1" class="inputLb">
+										<input type="text" id="inp1" placeholder="normal">
+									</label>
+									<label for="inp1" class="inputLb focus">
+										<input type="text" id="inp1" placeholder="focus">
+									</label>
+									<label for="inp1" class="inputLb red">
+										<input type="text" id="inp1" placeholder="틀리거나 오류">
+									</label>
+									<span class="redInfo">비밀번호가 일치하지 않습니다.</span>
+									<label for="inp1" class="inputLb">
+										<input type="text" id="inp1" placeholder="disabled" disabled>
+									</label>
+									<label for="inp1" class="inputLb">
+										<input type="text" id="inp1" placeholder="readonly" readonly>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>dataSet</th>
+							</tr>
+							<tr>
+								<td>
+									<h1>Title 1</h1>
+									<h2>Title 2</h2>
+									<h3>Title 3</h3>
+									<br/>
+									<p style="word-break:break-all;">paragraph paragraph paragraph paragraph paragraph paragraph paragraphparagraphparagraphparagraphparagraphparagraph</p>
+									<br/>
+									<dl class="dlStyle">
+										<dt>data title</dt>
+										<dd>data Detial</dd>
+									</dl>
+									<dl class="dlStyle">
+										<dt>data title</dt>
+										<dd>data Detial</dd>
+									</dl>
+								</td>
+							</tr>
+                        </tbody>
+                    </table>
+                </div>
+            	</section>
+            </div>
+            <!---->
+        </div>
+        <!-- //wrap -->
+        <!---------- pop -------->
+		<div class="popupDim">
+			<!-- basic Alert Popup -->
+			<div class="basicPop">
+				<div class="infomation">
+					<p>회원정보 수정을 위해<br>고객님의 비밀번호 확인이 필요합니다.<br>동의 시 확인 버튼을 눌러주세요.</p>
+				</div>
+				<div class="btnSet">
+					<button class="btnS gray btnclose">취소</button>
+					<button class="btnS yellow">확인</button>
+				</div>
+			</div>
+			<!-- //basic Alert Popup -->
+		</div>
+		<!-- full Popup -->
+		<div class="fullPopup">
+			<div class="fheader">
+				<button class="btnclose"></button>
+				<h1>이용약관</h1>
+			</div>
+			<div class="fcontents"></div>
+		</div>
+		<!-- //full Popup -->
+    </body>
+</html>

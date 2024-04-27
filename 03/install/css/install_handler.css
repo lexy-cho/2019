@@ -1,0 +1,123 @@
+@CHARSET "UTF-8";
+
+* {padding:0;margin:0;}
+body {
+	margin: 0 auto;
+	font-family: 'RenaultSamsungMotors', 'Malgun Gothic', Dotum,Verdana,AppleGothic,Sans-serif;
+	font-size: 17px;
+	color: #666666;
+	line-height: 1.5;
+	letter-spacing: -0.5px;
+}
+
+#installVP_wrap {
+    text-align: center;
+}
+
+#installVP_wrap #container {
+    /* width: 600px; */
+	width:700px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+
+#ie_progress {
+	margin-top: 30px;
+}
+
+
+#downVP_ie #title, #downVP_multi #title {
+	font-size: 20px;
+	font-weight: bold;
+	color: #000;
+	text-align: center;
+	margin-left: 0;
+}
+
+#downVP_ie #msg, #downVP_multi #msg, #downVP_msg {
+	/* margin: -10px 0; */ /*ie6,7 호환용*/
+	padding:10px 0;
+}
+#downVP_multi #msg {margin:0 auto;width:560px;}
+#downVP_msg {padding:20px 0 10px 20px;border-top: 2px solid #666;border-bottom: 1px solid #e3e6e8;}
+#downVP_ie #msg li, #downVP_multi #msg li, #downVP_msg li {
+	/* width: 530px; */
+	width:100%;
+	text-align: left;
+	letter-spacing: 0;
+	margin-bottom: 1px;
+	/* margin-left: -30px; */ /*ie6,7 호환용*/
+}
+
+#downVP_ie #msg li, #downVP_multi #msg li{
+	list-style: none;
+}
+#downVP_msg li {position:relative;list-style:none;}
+#downVP_msg li:after {content:'';position:absolute;left:-15px;top:8px;display:inline-block;width:0;height:0;border:3px solid #666;border-radius:100%;}
+
+#downVP_btn {
+	text-align: center;
+	margin-top: 40px;
+	margin-left: 150px;
+	margin-right:100px;
+	margin-bottom: 60px;
+	margin-top: 40px; /*ie6,7 호환용*/
+}
+
+#downVP_btn button {
+	width: 100px;
+	height: 40px;
+	/* font-family: 'Malgun Gothic', Dotum,Verdana,AppleGothic,Sans-serif; */
+	font-size: 14px;
+	font-weight: bold;
+	color: #333333;
+	background-color: #ffcc33;
+	border: 1px solid #ffffff;
+	cursor: pointer;
+	margin: 0 5px;
+}
+
+#inn {
+	width : 380px;margin:0 auto;
+	border-top: 1px solid #e3e6e8;
+	padding:10px 0;
+	border-bottom: 1px solid #e3e6e8;
+}
+
+label {
+	display : inline;
+	width: 245px;
+	height : 40px;
+	float: left;
+	line-height: 40px;
+	text-align: right;	
+}
+
+.instxt {
+	width: 100px;
+	height: 40px;
+	/*font-family: 'Malgun Gothic', Dotum,Verdana,AppleGothic,Sans-serif;*/
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 40px;
+}
+
+
+a {
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+	color: #ffcc33;
+	text-decoration: none;
+}
+
+/* 2020-04-09 layout */
+#top {height:100px;line-height:4;border-bottom:1px solid #f0f0f1;}
+#top h1 {margin:0;padding:0;color:#363636;font-size:24px;}
+#top img {width:66px;vertical-align:middle;}
+.pageInfo {padding:20px 20px;border:1px solid #e2e6e9;}
+.pageInfo strong {position:relative;padding-bottom:5px;margin-bottom:10px;display:block;color:#363636;font-weight:normal;font-size:20px;}
+.pageInfo strong:after {content:'';position:absolute;left:50%;bottom:0;margin:0 0 0 -104px;display:block;width:208px;height:3px;background-color:#ffcc33;}

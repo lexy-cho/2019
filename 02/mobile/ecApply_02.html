@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no"/>
+		<title>EASYCONNECT 신청</title>
+		<link rel="stylesheet" type="text/css" href="./css/font.css" />
+		<link rel="stylesheet" type="text/css" href="./css/common.css" />
+		<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.4.0.min.js"></script>
+		<script src="./js/common.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function (){
+			var agreeSelect ;
+			$('.agreeList li div').click(function(){
+				var agreeSelect = $(this).attr('class');
+				$('.fullPopup').css('display','block');
+				$('.fullPopup .fcontents').load('ecApply_data.html',function(){
+					if ( agreeSelect == 'agreeBtn1'){
+						$('.agreeDTBack').hide();
+						$('#agreeArea1').show();
+					} else if ( agreeSelect == 'agreeBtn2'){
+						$('.agreeDTBack').hide();
+						$('#agreeArea2').show();
+					} else if ( agreeSelect == 'agreeBtn3'){
+						$('.agreeDTBack').hide();
+						$('#agreeArea3').show();
+					}
+				});
+				$('body').css('overflow','hidden');
+				$(this).children('.agreeDetail').addClass("on").text("동의");
+			});
+			$(".fullPopup .btnclose").click(function(){
+				$('.agreeDTBack').hide();
+				$('.fullPopup').hide();
+				$('body').css('overflow','inherit');
+			});
+			$('.agreeList>div .agreeDetail').click(function(){
+				$(this).toggleClass('on');
+				$('.agreeList li div .agreeDetail').toggleClass('on');
+				$('.btnSet .btnL.yellow').attr('disabled', false);
+			});
+		});
+		</script>
+    </head>
+    <body>
+        <!-- wrap -->
+        <div id="wrap">
+       		<!---->
+            <div id="container">
+            	<section>
+                    <div class="agreeLayout">
+						<article>
+							<h2>약관 및 개인정보수집 동의</h2>
+							<div class="agreeList">
+                                <h3>각각 항목의 전문보기를 클릭하여 확인 후 서명을 진행해 주세요</h3>
+								<ul>
+									<li>
+										<div class="agreeBtn1"><span class="chkRed">(필수)</span>이지커넥트 이용 약관에 관한 동의<span class="agreeDetail">전문보기</span></div>
+									</li>
+									<li>
+										<div class="agreeBtn2"><span class="chkRed">(필수)</span>개인정보 수집/이용/위탁에 대한 동의<span class="agreeDetail">전문보기</span></div>
+									</li>
+									<li>
+										<div class="agreeBtn3"><span class="chkRed">(필수)</span>개인 위치정보 수집/처리/위탁 및 활용에 대한 동의<span class="agreeDetail">전문보기</span></div>
+									</li>
+								</ul>
+								<div class="tR"><strong>전체동의</strong><span class="agreeDetail">동의</span></div>
+							</div>
+							<p>※ 상세한 내용은 르노삼성자동차(주) 홈페이지 (http://www.renaultsamsungm.com) 「개인정보 취급방침」에서 확인할 수 있습니다. 본인은 본 동의서의 내용을 상세히 읽고 충분히 이해하여 이에 동의합니다.</p>
+							<!-- 20-01-14 주석처리 -->
+							<!-- <div class="signSet">
+								<div class="signItem">
+									<div>
+										<span class="signDim">서명활성화 버튼을 클릭하여<br>자필 성명을 작성해 주시기 바랍니다.<br>작성완료 후 다시한번 클릭하여<br>성명 오염을 방지해 주세요</span>
+										<span></span>
+										<strong>(성 명)</strong>
+									</div>
+									<button class="btnS lineYellow">초기화</button>
+									<button class="btnS lineGray singToggleBtn">서명활성화</button>
+								</div>
+								<div class="signItem">
+									<div>
+										<span class="signDim">서명활성화 버튼을 클릭하여<br>자필 성명을 작성해 주시기 바랍니다.<br>작성완료 후 다시한번 클릭하여<br>성명 오염을 방지해 주세요</span>
+										<span></span>
+										<strong>(서 명)</strong>
+									</div>
+									<button class="btnS lineYellow">초기화</button>
+									<button class="btnS lineGray singToggleBtn">서명활성화</button>
+								</div>
+							</div> -->
+							<!-- //20-01-14 주석처리 -->
+							<div class="btnSet">
+								<button class="btnL gray" onclick="location.href='ecApply_01.html'">이전</button>
+								<button class="btnL yellow" onclick="location.href='ecApply_03.html'" disabled>제출</button>
+							</div>
+							<!---->
+						</article>
+                    </div>
+            	</section>
+            </div>
+            <!---->
+        </div>
+        <!-- //wrap -->
+		<div class="fullPopup" style="display:none;">
+			<div class="fheader">
+				<button class="btnclose"></button>
+			</div>
+			<div class="fcontents"></div>
+		</div>
+    </body>
+</html>

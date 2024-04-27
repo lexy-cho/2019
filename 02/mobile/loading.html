@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no"/>
+		<title>EASYCONNECT 신청</title>
+		<link rel="stylesheet" type="text/css" href="./css/font.css" />
+		<link rel="stylesheet" type="text/css" href="./css/common.css" />
+		<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.4.0.min.js"></script>
+		<script src="./js/common.js"></script>
+    </head>
+    <body>
+		<div class="pageLoading"><div class="spinner"></div></div> <!-- 2019-12-24 페이지로딩 -->
+        <!-- wrap -->
+        <div id="wrap">
+       		<!---->
+            <div id="container">
+            	<section>
+                    <div class="easyconnectApply">
+                        <ul>
+                            <li>당사는 서비스 제공에 따른 최소한의 정보만을 수집하며, 하기의(필수입력사항)은 필수 적으로 기재해야 할 사항 입니다. * 표는 필수입력정보 항목 입니다.</li>
+                            <li>품질 또는 고객변심에 따른 매출 취소 시에는 별도의 해지 절차 없이 자동 해지 처리 되며, 재매출시에는 가입 신청을 다시 진행해야 합니다.</li>
+                        </ul>
+						<article>
+                            <div class="custInfo">
+                                <h2>가입신청고객 정보</h2>
+                                <dl>
+                                    <dt>성명<sup>필수항목</sup></dt>
+                                    <dd>
+                                        <label for="inp1" class="inputLb">
+										    <input type="text" id="inp1" placeholder="김르노" />
+									    </label>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>주소<sup>필수항목</sup></dt>
+                                    <dd>
+                                        <label for="inp2" class="inputLb">
+										    <input type="text" id="inp2" placeholder="서울시 영등포구" />
+									    </label>
+                                        <label for="inp2" class="inputLb">
+										    <input type="text" id="inp2" placeholder="상세 주소를 입력해 주세요" />
+									    </label>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>핸드폰 번호<sup>필수항목</sup></dt>
+                                    <dd>
+                                        <label for="inp3" class="inputLb">
+										    <input type="text" id="inp2" placeholder="010-1234-5678" />
+									    </label>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>e-mail<sup>필수항목</sup></dt>
+                                    <dd>
+                                        <label for="inp4" class="inputLb">
+										    <input type="text" id="inp4" placeholder="my_rsm@gmail.com" />
+									    </label>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>차대번호<sup>필수항목</sup></dt>
+                                    <dd>
+                                        <label for="inp5" class="inputLb">
+										    <input type="number" id="inp5" placeholder="123456" />
+									    </label>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>계약번호<sup>필수항목</sup></dt>
+                                    <dd>
+                                        <label for="inp6" class="inputLb">
+										    <input type="number" id="inp6" placeholder="6748593212" />
+									    </label>
+                                    </dd>
+                                </dl>
+                            </div>
+							<!---->
+							<div class="btnSet">
+								<button class="btnL yellow wFull" onclick="location.href='ecApply_02.html'">다음</button><!-- 2019-12-24 class 변경 -->
+							</div>
+							<!---->
+						</article>
+                    </div>
+            	</section>
+            </div>
+            <!---->
+        </div>
+        <!-- //wrap -->
+    </body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8"> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>르노삼성자동차 SSMS</title>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/duDatepicker.css">
+		<!-- js libs -->
+		<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.4.0.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/duDatepicker.js"></script>
+		<script src="js/basic.js"></script>
+		<script>
+			$(document).ready(function(){
+			}); 
+		</script>
+	</head>
+	<body>		
+		<div id="wrap">
+			<!-- menu 삭제 -->
+			<!---->
+			<!-- container -->
+			<div id="container">
+				<section>
+					<!-- head 삭제 -->
+					<!---->
+					<article>
+						<div class="comLayout">
+							<!-- root 삭제 -->
+							<div class="contents">
+								<!-- boardTop -->
+								<div class="boardTop">
+									<div class="tbvs2">
+										<table>
+											<colgroup>
+												<col width="10%" />
+												<col width="40%" />
+												<col width="10%" />
+												<col width="40%" />
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>신청일자</th>
+													<td>
+														<span class="calArea">
+															<span class="calSet"><input type="text" class="cal" value="2018-03-02" /><button class="btnCal"></button></span>
+															 ~ 
+															<span class="calSet"><input type="text" class="cal" /><button class="btnCal"></button></span>
+														</span>
+													</td>
+													<th>검색키워드</th>
+													<td><input type="text" placeholder="차대번호/차량번호/ICCID/MSISDN/IMEI/고객명을 입력하세요" class="wFull" /></td>
+												</tr>
+												<tr>
+													<th>서비스상태</th>
+													<td colspan="3">
+														<span class="radioSet"><input type="radio" id="" checked><label for=""><i></i>전체</label></span>
+														<span class="radioSet"><input type="radio" id=""><label for=""><i></i>Apply</label></span>
+														<span class="radioSet"><input type="radio" id=""><label for=""><i></i>Activated</label></span>
+														<span class="radioSet"><input type="radio" id=""><label for=""><i></i>Deactivated</label></span>
+														<span class="radioSet"><input type="radio" id=""><label for=""><i></i>Retire</label></span>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="buttonArea">
+										<button class="btnLarge">초기화</button>
+										<button class="btnLarge black">검색</button>
+									</div>
+								</div>
+								<!--// boardTop -->
+								<!--Board List-->
+								<div class="cont">총 00건</div>
+								<div class="rsls1">
+									<table cellpadding="0" cellspacing="0" border="0">
+										<colgroup>
+											<col width="20%" />
+											<col width="20%" />
+											<col width="10%" />
+											<col width="20%" />
+											<col width="10%" />
+											<col width="10%" />
+											<col width="10%" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th>차대번호(VIN)</th>
+												<th>ICCID</th>
+												<th>CUSTOMER</th>
+												<th>IMIEI</th>
+												<th>SIM State</th>
+												<th>Service State</th>
+												<th>개인정보수집 동의서</th>
+											</tr>
+										</thead>
+										<tbody>
+											<!-- Loop -->
+											<tr>
+												<td><a href="tps_new_view.html">FVO1234567890</a></td>
+												<td>98740282734482719203</td>
+												<td>홍길동</td>
+												<td>4500089990291827</td>
+												<td>Activated</td>
+												<td>Activated</td>
+												<td>YYY</td>
+											</tr>
+											<!-- //Loop -->
+											<tr>
+												<td><a href="tps_new_view.html">FVO1234567890</a></td>
+												<td>98740282734482719203</td>
+												<td>홍길동</td>
+												<td>4500089990291827</td>
+												<td>Activated</td>
+												<td>Activated</td>
+												<td>YYY</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!--Paginate-->
+								<div class="paginate">
+									<span>
+										<a class="first">처음</a>
+										<a class="prev">이전</a>
+											<a class="on">1</a>
+											<a>2</a>
+											<a>3</a>
+											<a>4</a>
+											<a>5</a>
+										<a class="next">다음</a>
+										<a class="last">마지막</a>
+									</span>
+								</div>
+								<!--//-->
+							</div>
+							<!-- //contents -->
+						</div>
+					</article>
+					<!---->
+				</section>
+			</div>
+			<!-- //container -->
+		</div>
+	</body>
+</html>

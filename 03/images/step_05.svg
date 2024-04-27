@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<g id="_x35_">
+	<path id="profile_3_" fill="#E7F4FA" d="M50,100.001c-30.6,0-50-19.39-50-50c0-30.842,19.158-50,50-50s50,19.16,50,50
+		S80.84,100.001,50,100.001z"/>
+	<g>
+		<g>
+			<g id="흰색배경">
+				<path id="사각형_2027" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M32.31,26.472h38.069v50.477H32.31V26.472
+					z"/>
+			</g>
+			<g id="핸드폰">
+				<path id="사각형_2028" fill="none" stroke="#000000" stroke-miterlimit="10" d="M39.005,16.235h24.679
+					c3.699,0,6.695,2.997,6.695,6.695v55.876c0,3.697-2.996,6.693-6.695,6.693H39.005c-3.697,0-6.695-2.996-6.695-6.693V22.931
+					C32.31,19.232,35.308,16.235,39.005,16.235z"/>
+				<path id="선_74" fill="none" stroke="#000000" stroke-miterlimit="10" d="M32.31,26.961h38.069"/>
+				<path id="선_75" fill="none" stroke="#000000" stroke-miterlimit="10" d="M32.31,76.67h38.069"/>
+				<path id="선_73" fill="none" stroke="#000000" stroke-miterlimit="10" d="M47.594,21.774h7.291"/>
+			</g>
+			<rect x="36.078" y="41.511" fill="#FFCC33" width="30.671" height="10.199"/>
+		</g>
+		<g id="손" transform="translate(3)">
+			<path id="패스_1438" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M75.615,94.005
+				c0,0-18.946-36.868-19.831-39.012c-0.974-2.351,2.827-4.079,5.334-0.313c1.741,2.618,14.565,22.187,14.565,22.187
+				c5.98-0.769,12.06,0.103,17.588,2.516"/>
+		</g>
+		<g id="Layer_3">
+			<g id="그룹_693">
+				<path id="패스_835" fill="#4CC992" d="M61.777,44.837c-4.217,0-6.894-2.659-6.894-6.856c0-4.229,2.642-6.857,6.894-6.857
+					s6.895,2.627,6.895,6.857S66.029,44.837,61.777,44.837z"/>
+				<path id="패스_836" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M58.736,37.287l2.23,2.112
+					l3.854-3.649"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

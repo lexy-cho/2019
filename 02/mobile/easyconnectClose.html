@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no"/>
+		<title>EASYCONNECT 해지</title>
+		<link rel="stylesheet" type="text/css" href="./css/font.css" />
+		<link rel="stylesheet" type="text/css" href="./css/common.css" />
+		<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.4.0.min.js"></script>
+		<script src="./js/common.js"></script>
+    </head>
+    <body>
+        <!-- wrap -->
+        <div id="wrap">
+       		<!---->
+            <div id="container">
+            	<section>
+                    <div class="easyconnectClose">
+						<article>
+                            <div class="custInfo">
+                                <h2>가입 고객 정보</h2>
+                                <dl>
+                                    <dt>성명</dt>
+                                    <dd>
+                                        <label for="inp1" class="inputLb">
+										    <input type="text" id="inp1" placeholder="김르노">
+									    </label>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>핸드폰 번호</dt>
+                                    <dd>
+                                        <label for="inp1" class="inputLb">
+										    <input type="text" id="inp2" placeholder="010-1234-5678">
+									    </label>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>e-mail</dt>
+                                    <dd>
+                                        <label for="inp1" class="inputLb">
+										    <input type="text" id="inp3" placeholder="my_rsm@gmail.com">
+									    </label>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>차대번호</dt>
+                                    <dd>
+                                        <label for="inp1" class="inputLb">
+										    <input type="number" id="inp4" placeholder="123456">
+									    </label>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="cancelChk">
+                                <h2>해지 사유</h2>
+                                <ul>
+                                    <li>
+                                        <span class="checkSet">
+                                            <input type="checkbox" id="chk1">
+                                            <label for="chk1"><i></i></label>
+                                        </span>
+                                        <strong>차량매매 / 양도 / 세차</strong>
+                                    </li>
+                                    <li>
+                                        <span class="checkSet">
+                                            <input type="checkbox" id="chk2">
+                                            <label for="chk2"><i></i></label>
+                                        </span>
+                                        <strong>재가입 / 대차가입</strong>
+                                    </li>
+                                    <li>
+                                        <span class="checkSet">
+                                            <input type="checkbox" id="chk3">
+                                            <label for="chk3"><i></i></label>
+                                        </span>
+                                        <strong>장기 미사용</strong>
+                                    </li>
+                                    <li>
+                                        <span class="checkSet">
+                                            <input type="checkbox" id="chk4">
+                                            <label for="chk4"><i></i></label>
+                                        </span>
+                                        <strong>불필요</strong>
+                                    </li>
+                                    <li>
+                                        <span class="checkSet">
+                                            <input type="checkbox" id="chk5">
+                                            <label for="chk5"><i></i></label>
+                                        </span>
+                                        <strong>서비스 불만</strong>
+                                    </li>
+                                    <li>
+                                        <span class="checkSet">
+                                            <input type="checkbox" id="chk6">
+                                            <label for="chk6"><i></i></label>
+                                        </span>
+                                        <strong>콘텐츠 불만</strong>
+                                    </li>
+                                    <li>
+                                        <span class="checkSet">
+                                            <input type="checkbox" id="chk7">
+                                            <label for="chk7"><i></i></label>
+                                        </span>
+                                        <strong>단말기 불만</strong>
+                                    </li>
+                                    <li>
+                                        <span class="checkSet">
+                                            <input type="checkbox" id="chk8">
+                                            <label for="chk8"><i></i></label>
+                                        </span>
+                                        <strong>요금 불만</strong>
+                                    </li>
+                                    <li class="chkOther">
+                                        <span class="checkSet">
+                                            <input type="checkbox" id="chk9">
+                                            <label for="chk9"><i></i></label>
+                                        </span>
+                                        <strong>기타</strong>
+                                        <input type="text" placeholder="기타 해지 사유를 입력해 주세요">
+                                    </li>
+                                </ul>
+                                <p>&#8251;위와 같은 내용으로 EASYCONNECT 서비스 해지를 신청 합니다.</p>
+                            </div>
+                            <div class="signSet">
+								<div class="signItem">
+									<div>
+										<span class="signDim">서명활성화 버튼을 클릭하여<br>자필 성명을 작성해 주시기 바랍니다.<br>작성완료 후 다시한번 클릭하여<br>성명 오염을 방지해 주세요</span>
+										<span></span>
+										<strong>(성 명)</strong>
+									</div>
+									<button class="btnS lineYellow">초기화</button>
+									<button class="btnS lineGray singToggleBtn">서명활성화</button>
+								</div>
+								<div class="signItem">
+									<div>
+										<span class="signDim">서명활성화 버튼을 클릭하여<br>자필 성명을 작성해 주시기 바랍니다.<br>작성완료 후 다시한번 클릭하여<br>성명 오염을 방지해 주세요</span>
+										<span></span>
+										<strong>(서 명)</strong>
+									</div>
+									<button class="btnS lineYellow">초기화</button>
+									<button class="btnS lineGray singToggleBtn">서명활성화</button>
+								</div>
+							</div>
+							<!---->
+							<div class="btnSet">
+								<button class="btnL gray" onClick="#">취소</button>
+								<button class="btnL yellow" onClick="#">제출</button>
+							</div>
+							<!---->
+						</article>
+                    </div>
+            	</section>
+            </div>
+            <!---->
+        </div>
+        <!-- //wrap -->
+    </body>
+</html>

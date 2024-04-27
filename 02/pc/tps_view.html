@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8"> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>르노삼성자동차 SSMS</title>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/duDatepicker.css">
+		<!-- js libs -->
+		<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.4.0.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/duDatepicker.js"></script>
+		<script src="js/basic.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#serviceBtn').click(function(){
+				 	$('.servicePop').show();
+				 	$('#blind_wrap').toggle(); 
+				 	$("body").addClass('modalOpen');
+				 	return false;
+				});
+				$('#simBtn').click(function(){
+				 	$('.simPop').show();
+				 	$('#blind_wrap').toggle(); 
+				 	$("body").addClass('modalOpen');
+				 	return false;
+				});
+				$('.commonPop .pclose').click(function(){
+				 	$('.commonPop').hide();
+				 	$('#blind_wrap').toggle(); 
+				 	$("body").removeClass('modalOpen');
+				 	return false;
+				});
+			}); 
+		</script>
+	</head>
+	<body>		
+		<div id="wrap">
+			<!-- menu -->
+			<div class="mobileMenu">
+				<header>
+				<div id="header">
+					<h1>
+						<img src="images/img_logo.png" alt="르노삼성자동차 e-BEST" />
+					</h1>
+					<nav>
+						<div class="gnb">
+							<!-- gnbMenu -->
+							<ul class="firstGnb">
+								<li class="snbCase on"><a href="tps_list.html"><span><strong>관리화면</strong></span></a></li>
+							</ul>
+							<!-- //gnbMenu -->
+						</div>
+					</nav>
+				</div>
+				</header>
+			</div>
+			<!---->
+			<!-- container -->
+			<div id="container">
+				<section>
+					<div class="head">
+						<div class="back">
+							<h2><strong>관리화면</strong></h2>
+							<div class="rBtn MrBtn">
+								<div>
+									<span><input type="button" value="로그아웃" class="btnLogout" onclick="location.href='login.html' "/></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!---->
+					<article>
+						<div class="comLayout">
+							<div class="root">
+								<div class="rootBack">
+									<span class="pagePos"><a class="rootTit"></a><a  class="list">관리화면</a><span>검색 목록 조회</span></span>
+								</div>
+							</div>
+							<div class="contents">
+								<!-- boardTop -->
+								<div class="conView">
+									<div class="conBox">
+										<table class="tbvs1">
+											<colgroup>
+												<col width="180" />
+												<col />
+												<col width="180" />
+												<col />
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>차대번호(VIN)</th>
+													<td colspan="3">FVO1234567890</td>
+												</tr>
+												<tr>
+													<th>무료 약정 시작 일자</th>
+													<td>2020-02-01</td>
+													<th>SIM 고유번호<br/>(ICCID)</th>
+													<td>98740282734482719203</td>
+												</tr>
+												<tr>
+													<th>무료 약정 종료 일자</th>
+													<td>2023-01-31</td>
+													<th>전화번호<br/>(MSISDN)</th>
+													<td>012-1234-1234</td>
+												</tr>
+												<tr>
+													<th>이용자 명</th>
+													<td>김신차</td>
+													<th>단말기식별자<br/>(IMEI)</th>
+													<td>192840000000000</td>
+												</tr>
+												<tr>
+													<th>서비스 상태</th>
+													<td>
+														<span class="selectSet">
+															<strong>사용</strong>
+															<select>
+																<option>사용</option>
+																<option>중지 / 해지</option>
+															</select>
+														</span>
+														<button class="btnL" id="serviceBtn">이력</button>
+													</td>
+													<th>SIM 상태</th>
+													<td>
+														<span class="selectSet">
+															<strong>Activated</strong>
+															<select>
+																<option>Test Ready</option>
+																<option>Inventory</option>
+																<option>Activated</option>
+																<option>Deactivated</option>
+																<option>Retire</option>
+																<option>Purge</option>
+															</select>
+														</span>
+														<button class="btnL" id="simBtn">이력</button>
+													</td>
+												</tr>
+												<tr>
+													<th>계약 번호</th>
+													<td>R123456789012345</td>
+													<th>최초활성화일</th>
+													<td>2020-02-15 <button class="btnL">SIM 정보 새로 고침</button></td>
+												</tr>
+												<tr>
+													<th>이용 옵션(선택 사항)</th>
+													<td colspan="3">IVC+IVI+기본</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="btnBox tCenter mb20">
+										<button class="btnC" onclick="location.href='tps_list.html'">목록으로</button>
+										<button class="btnC red">저장</button>
+									</div>
+								</div>
+								<!--//-->
+							</div>
+							<!-- //contents -->
+						</div>
+					</article>
+					<!---->
+				</section>
+			</div>
+			<!-- //container -->
+		</div>
+		<!----->
+		<div class="commonPop simPop" style="display:none;">
+			<div class="popHeader">
+				<strong>SIM 이력</strong>
+				<button class="pclose">닫기</button>
+			</div>
+			<div class="vinTxt">차대번호(VIN) : FV00999999999</div>
+			<div class="popData">
+				<div class="rsls1">
+					<table cellpadding="0" cellspacing="0" border="0">
+						<colgroup>
+							<col width="90" />
+							<col width="200" />
+							<col width="120" />
+							<col width="150" />
+							<col width="80" />
+							<col />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>일자</th>
+								<th>ICCID</th>
+								<th>MSISDN</th>
+								<th>IMEI</th>
+								<th>SIM State</th>
+								<th>비고</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- Loop -->
+							<tr>
+								<td>2020-12-31</td>
+								<td>98740282734482719203</td>
+								<td>012-1234-1234</td>
+								<td>192840000000000</td>
+								<td>Activated</td>
+								<td>활성화</td>
+							</tr>
+							<!-- //Loop -->
+							<tr>
+								<td>2020-12-31</td>
+								<td>98740282734482719203</td>
+								<td>012-1234-1234</td>
+								<td>192840000000000</td>
+								<td>Activated</td>
+								<td>활성화</td>
+							</tr>
+							<tr>
+								<td>2020-12-31</td>
+								<td>98740282734482719203</td>
+								<td>012-1234-1234</td>
+								<td>192840000000000</td>
+								<td>Activated</td>
+								<td>활성화</td>
+							</tr>
+							<tr>
+								<td>2020-12-31</td>
+								<td>98740282734482719203</td>
+								<td>012-1234-1234</td>
+								<td>192840000000000</td>
+								<td>Activated</td>
+								<td>활성화</td>
+							</tr>
+							<tr>
+								<td>2020-12-31</td>
+								<td>98740282734482719203</td>
+								<td>012-1234-1234</td>
+								<td>192840000000000</td>
+								<td>Activated</td>
+								<td>활성화</td>
+							</tr>
+							<tr>
+								<td>2020-12-31</td>
+								<td>98740282734482719203</td>
+								<td>012-1234-1234</td>
+								<td>192840000000000</td>
+								<td>Activated</td>
+								<td>활성화</td>
+							</tr>
+							<tr>
+								<td>2020-12-31</td>
+								<td>98740282734482719203</td>
+								<td>012-1234-1234</td>
+								<td>192840000000000</td>
+								<td>Activated</td>
+								<td>활성화</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!--//-->
+		<!----->
+		<div class="commonPop servicePop" style="display:none;">
+			<div class="popHeader">
+				<strong>서비스 이력</strong>
+				<button class="pclose">닫기</button>
+			</div>
+			<div class="vinTxt">차대번호(VIN) : FV00999999999</div>
+			<div class="popData">
+				<div class="rsls1">
+					<table cellpadding="0" cellspacing="0" border="0">
+						<colgroup>
+							<col width="90" />
+							<col width="80" />
+							<col width="110" />
+							<col width="130" />
+							<col width="220" />
+							<col />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>일자</th>
+								<th>이용자 명</th>
+								<th>서비스 상태</th>
+								<th>서비스 이용 선택 사항</th>
+								<th>계약번호</th>
+								<th>비고</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- Loop -->
+							<tr>
+								<td>2020-12-31</td>
+								<td>차중고</td>
+								<td>Activated</td>
+								<td>IVC+IVI+기본</td>
+								<td>01234567890123456789</td>
+								<td>사용</td>
+							</tr>
+							<!-- //Loop -->
+							<tr>
+								<td>2020-12-31</td>
+								<td>차중고</td>
+								<td>Activated</td>
+								<td>IVC+IVI+기본</td>
+								<td>01234567890123456789</td>
+								<td>사용</td>
+							</tr>
+							<tr>
+								<td>2020-12-31</td>
+								<td>차중고</td>
+								<td>Activated</td>
+								<td>IVC+IVI+기본</td>
+								<td>01234567890123456789</td>
+								<td>사용</td>
+							</tr>
+							<tr>
+								<td>2020-12-31</td>
+								<td>차중고</td>
+								<td>Activated</td>
+								<td>IVC+IVI+기본</td>
+								<td>01234567890123456789</td>
+								<td>사용</td>
+							</tr>
+							<tr>
+								<td>2020-12-31</td>
+								<td>차중고</td>
+								<td>Activated</td>
+								<td>IVC+IVI+기본</td>
+								<td>01234567890123456789</td>
+								<td>사용</td>
+							</tr>
+							<tr>
+								<td>2020-12-31</td>
+								<td>차중고</td>
+								<td>Activated</td>
+								<td>IVC+IVI+기본</td>
+								<td>01234567890123456789</td>
+								<td>사용</td>
+							</tr>
+							<tr>
+								<td>2020-12-31</td>
+								<td>차중고</td>
+								<td>Activated</td>
+								<td>IVC+IVI+기본</td>
+								<td>01234567890123456789</td>
+								<td>사용</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!--//-->
+		<div id="blind_wrap" style="display:none;"></div>
+	</body>
+</html>

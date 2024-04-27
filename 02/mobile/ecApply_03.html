@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no"/>
+		<title>EASYCONNECT 신청</title>
+		<link rel="stylesheet" type="text/css" href="./css/font.css" />
+		<link rel="stylesheet" type="text/css" href="./css/common.css" />
+		<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.4.0.min.js"></script>
+		<script src="./js/common.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function (){
+			var agreeSelect ;
+			$('.agreeList li div').click(function(){
+				var agreeSelect = $(this).attr('class');
+				$('.fullPopup').css('display','block');
+				$('body').css('overflow','hidden');
+			});
+			$(".fullPopup .btnclose").click(function(){
+				$('.agreeDTBack').hide();
+				$('.fullPopup').hide();
+				$('body').css('overflow','inherit');
+			}); //팝업닫기 샘플
+		});
+		</script>
+    </head>
+    <body>
+        <!-- wrap -->
+        <div id="wrap">
+       		<!---->
+            <div id="container">
+            	<section>
+                    <div class="noSub_main">
+						<article>
+							<div class="noSub_info">
+								<img src="images/icon_bird.png" alt="완료이미지"><!-- 2020-02-20 이미지교체 -->
+								<p>EASY CONNECT 서비스 신청이 완료 되었습니다.</p>
+								<a class="btnM yellow" href="ecApply_01.html">이전 화면으로 이동 합니다.</a>
+							</div>
+						</article>
+                    </div>
+            	</section>
+            </div>
+            <!---->
+        </div>
+        <!-- //wrap -->
+    </body>
+</html>

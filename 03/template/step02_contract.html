@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no"/>
+		<title>르노삼성자동차 e-Commerce</title>
+		<link rel="stylesheet" type="text/css" href="../css/font.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.4.0.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script>
+		$(document).ready(function (){
+			$('.numPopLb').click(function(){
+				$('.popupDim').css('display','block');
+				$('.numberPop').css('display','block');
+			});
+			$('.numPopChk').click(function(){
+				$('.numPopLb input').val('811228-******');
+				$('.numPopLb').focus();
+			});
+		});
+		</script>
+    </head>
+    <body>
+        <!-- wrap -->
+        <div id="wrap">
+       		<!--
+        	<div id="header">
+                <button class="btnBack">이전</button>
+                <h1>내 차 온라인 구매</h1>
+        	</div>-->
+			<div class="stepBack">
+				<div class="step step5">
+					<span class="fin"><em>Step 1</em></span>
+					<span class="now"><em>Step 2</em></span>
+					<span><em>Step 3</em></span>
+					<span><em>Step 4</em></span>
+					<span><em>Step 5</em></span>
+				</div>
+        	</div>
+       		<!---->
+            <div id="container" class="stepCase">
+            	<section>
+                    <div class="contractLayout">
+						<article>
+							<h2>매매계약서 작성</h2>
+							<h3>[차량사항]</h3>
+							<div class="carInfo">
+								<dl class="dlStyle">
+									<dt>차종</dt>
+									<dd>QM6 GDe 2WD RE Signature 20MY</dd>
+								</dl>
+								<dl class="dlStyle">
+									<dt>색상 (내장/외장)</dt>
+									<dd>클라우드 펄/시에나 브라운 가죽시트</dd>
+								</dl>
+								<dl class="dlStyle">
+									<dt>선택용품</dt>
+									<dd>스마트 커넥트</dd>
+								</dl>
+								<dl class="dlStyle">
+									<dt>선택사양</dt>
+									<dd>L47 알루미늄 페달, AVM 세트 + AXS 네비 본체 (샤크), 용품사양 추가 정보가 노출되는 영역 L47 알루미늄 페달, AVM 세트 + AXS 네비 본체 (샤크), 용품사양 추가 정보가 노출되는 영역 </dd>
+								</dl>
+								<dl class="dlStyle">
+									<dt>수량</dt>
+									<dd>1대</dd>
+								</dl>
+								<dl class="dlStyle">
+									<dt>면세여부</dt>
+									<dd>
+										<span class="radioSet">
+											<input type="radio" id="radio1" name="rd" checked disabled>
+											<label for="radio1"><i></i>과세</label>
+										</span>
+										<span class="radioSet">
+											<input type="radio" id="radio2" name="rd" disabled>
+											<label for="radio2"><i></i>감세</label>
+										</span>
+										<span class="radioSet">
+											<input type="radio" id="radio3" name="rd" disabled>
+											<label for="radio3"><i></i>면세</label>
+										</span>
+										<span class="radioSet">
+											<input type="radio" id="radio4" name="rd" disabled>
+											<label for="radio4"><i></i>영세</label>
+										</span>
+									</dd>
+								</dl>
+								<dl class="dlStyle">
+									<dt>자동차등록</dt>
+									<dd>
+										<span class="radioSet">
+											<input type="radio" id="radio11" name="rd2" checked disabled>
+											<label for="radio11"><i></i>위탁(대행)</label>
+										</span>
+										<span class="radioSet">
+											<input type="radio" id="radio12" name="rd2" disabled>
+											<label for="radio12"><i></i>본인</label>
+										</span>
+									</dd>
+								</dl>
+								<dl class="dlStyle">
+									<dt>인도예정일</dt>
+									<dd>2019-00-00</dd>
+								</dl>
+								<dl class="dlStyle">
+									<dt>인도장소</dt>
+									<dd>
+										<span class="radioSet">
+											<input type="radio" id="radio21" name="rd3" checked disabled>
+											<label for="radio21"><i></i>지점(수완지점)</label>
+										</span>
+										<span class="radioSet">
+											<input type="radio" id="radio22" name="rd3" disabled>
+											<label for="radio22"><i></i>기타</label>
+										</span>
+									</dd>
+								</dl>
+							</div>
+							<h3>[판매가격]</h3>
+							<div class="price">
+								<dl class="dlStyle">
+									<dt>기본가격 (원)</dt>
+									<dd>30,000,000</dd>
+								</dl>
+								<dl class="dlStyle">
+									<dt>선택사양 (원)</dt>
+									<dd>4,080,000</dd>
+								</dl>
+								<dl class="dlStyle">
+									<dt>선택용품 (원)</dt>
+									<dd>1,500,000</dd>
+								</dl>
+								<dl class="dlStyle">
+									<dt>해피케어상품</dt>
+									<dd class="twoLine">
+										<div class="first">
+											<span class="checkSet">
+												<input type="checkbox" id="chk31" checked disabled>
+												<label for="chk31"><i></i>보증연장</label>
+											</span>
+											<span class="checkSet">
+												<input type="checkbox" id="chk32" disabled>
+												<label for="chk32"><i></i>안심관리</label>
+											</span>
+											<span class="checkSet">
+												<input type="checkbox" id="chk33" disabled>
+												<label for="chk33"><i></i>프리미엄</label>
+											</span>
+										</div>
+										<div class="last">
+											1,000,000
+										</div>
+									</dd>
+								</dl>
+								<div class="price line">
+									<dl class="dlStyle carPrice">
+										<dt>차량가격 (계)</dt>
+										<dd>33,200,000</dd>
+									</dl>
+									<div class="markArea">
+										<dl class="dlStyle plus">
+											<dt>탁송료</dt>
+											<dd>150,000</dd>
+										</dl>
+										<dl class="dlStyle minus">
+											<dt>매출 A/C (할인)</dt>
+											<dd>3,530,000</dd>
+										</dl>
+										<dl class="dlStyle total">
+											<dt><strong>판매가격 (계)</strong></dt>
+											<dd><strong>29,820,000</strong></dd>
+										</dl>
+									</div>
+								</div>
+							</div>
+							<h3>[지불조건]</h3>
+							<div class="price">
+								<dl class="dlStyle">
+									<dt>계약금 (원)</dt>
+									<dd>30,000,000</dd>
+								</dl>
+								<dl class="dlStyle">
+									<dt>인도금 (원)</dt>
+									<dd>4,080,000</dd>
+								</dl>
+								<dl class="dlStyle">
+									<dt>지불수단</dt>
+									<dd>
+										<span class="radioSet">
+											<input type="radio" id="radio41" name="rd4"disabled>
+											<label for="radio41"><i></i>현금</label>
+										</span>
+										<span class="radioSet">
+											<input type="radio" id="radio42" name="rd4" checked  disabled>
+											<label for="radio42"><i></i>할부</label>
+										</span>
+										<!-- <span class="radioSet">
+											<input type="radio" id="radio43" name="rd4" disabled>
+											<label for="radio43"><i></i>리스</label>
+										</span> -->
+									</dd>
+								</dl>
+								<dl class="dlStyle on"><!-- 할부일 경우 on class 추가 -->
+									<dt>할부금 (원)</dt>
+									<dd>29,820,000</dd>
+								</dl>
+								<div class="box"><!-- 할부일 경우 show -->
+									<dl class="dlStyle">
+										<dt>금융사명</dt>
+										<dd>RCI</dd>
+									</dl>
+									<dl class="dlStyle">
+										<dt>상품명</dt>
+										<dd>저리할부</dd>
+									</dl>
+									<div class="line">
+										<dl class="dlStyle">
+											<dt>할부원금 (원)</dt>
+											<dd>20,230,000 원<br/>36개월 / 5.5%</dd>
+										</dl>
+										<dl class="dlStyle">
+											<dt>월할부금 (원)</dt>
+											<dd>365,000</dd>
+										</dl>
+										<dl class="dlStyle">
+											<dt>할부총액 (계)</dt>
+											<dd>26,810,000</dd>
+										</dl>
+									</div>
+								</div>
+								<!-- <dl class="dlStyle">
+									<dt>선포인트 할인 (원)</dt>
+									<dd>0</dd>
+								</dl> -->
+								<dl class="dlStyle">
+									<dt>적립카드포인트 (원)</dt>
+									<dd>0</dd>
+								</dl>
+								<div class="line">
+									<dl class="dlStyle total">
+										<dt><strong>지불총액 (계)</strong></dt>
+										<dd><strong>29,820,000</strong></dd>
+									</dl>
+								</div>
+							</div>
+							<h3>[계약금 영수증]</h3>
+							<div class="receipt price">
+								<dl class="dlStyle">
+									<dt>영수금액</dt>
+									<dd>10,000 원</dd>
+								</dl>
+								<p class="box">
+									본 영수금액은 청약 결제금액 입니다.<br/>
+									결제수단 : KAKAOPAY  /  결제일 : 2019-00-00
+								</p>
+							</div>
+							<div class="must">
+								<strong>※ 고객께서 꼭 알아 두셔야 할 사항 ※</strong>
+								<p>* 차량 인도금 및 부대비용은 거래 안전을 위해 반드시 매수인 명의로 아래 '르노삼성자동차㈜' 계좌로 송금하셔야 합니다. <br/>
+								<span>[은행명 | 계좌번호 | 예금주 르노삼성자동자(주)]</span></p>
+								<ul>
+									<li>특별 한정 판매 차량으로 조기 마감될 수 있으며, 온라인 청약/계약이후 원할한 차량 구매를 위해 르노삼성자동차(주)에서 신속하게 고객님께 연락 드릴 예정입니다.</li>
+									<li>자동차라는 상품의 특성상 회사가 공급에 필요한 조치를 하기까지 청약/계약일로 부터 3일 이상의 기간이 소요될 수도 있습니다. 다만, 30일 이내 공급을 원칙으로하며, 실제 공급에 필요한 기간은 재고상황,인도금 납부 여부 등에 따라 유동적일 수 있습니다.</li>
+									<li>매수인의 요청으로 할부금액 조정과 같은 구매 대금 결제 방법은 변경 가능합니다. 다만, 매출이 완료된 경우 제한 될 수 있습니다.</li>
+									<li>청약 후 명의변경 및 공동명의자로의 구입은 불가 합니다. 개인사업자의 경우 영업담당에게 요청하시기 바랍니다.</li>
+									<li>
+										차량 등록전까지는 청약과 계약은 철회할 수 있으며, 계약금과 인도금은 전액 환불해 드립니다. 
+										단 아래의 경우에는 청약,계약 철회에 제한이 있을 수 있습니다.
+										 <ol>
+											<li>① 소비자에게 책임이 있는 사유로 재화등이 멸실되거나 훼손된 경우. 다만, 재화 등의 내용을 확인하기 위하여 포장 등을 훼손한 경우는 제외합니다.</li>
+											<li>② 소비자의 사용 또는 일부 소비로 재화 등의 가치가 현저히 감소한 경우</li>
+											<li>③ 시간이 지나 다시 판매하기 곤란할 정도로 재화 등의 가치가 현저히 감소한 경우</li>
+											<li>④ 그 밖에 거래의 안전을 위하여 대통령령으로 정하는 경우 소비자의 주문에 따라 개별적으로 생산되는 재화 등 또는 이와 유사한 재화 등에 대하여 "청약철회 등" 을 인정하는 경우 통신판매업자에게 회복할 수 없는 중대한 피해가 예상되는 경우로서 사전에 해당 거래에 대하여 별도로 그 사실을 고지하고 소비자의 서면(전자문서를 포함한다)에 의한 동의를 받은 경우를 말합니다.</li>
+										 </ol>
+									</li>
+									<li>'선택 용품'은 완성차량에 부착하는 액세사리로 별도의 보중서 및 보증 조건에 의하여 품질을 보증합니다.</li>
+									<li>'해피케어상품'의 보증조건 등 중요사항은 별도의 약관에 따릅니다. </li>
+									<!--<li>상기 월 할부금은 선수금 0% 기준으로 계산된 것이며, 실제 선수금은 매매계약서 작성 후 전문상담원 통해 수정 가능합니다. 수정사항 발생시, 수정사항 반영된 최종 매매계약서로 계약 진행될 예정입니다.   </li> -->
+								</ul>
+							</div>
+							<h3>[매수인]</h3>
+							<div class="">
+								<dl class="dlStyle">
+									<dt>성명</dt>
+									<dd>홍길동</dd>
+								</dl>
+								<dl class="dlStyle">
+									<dt>주민등록주소</dt>
+									<dd>서울시 강남구 강남대로</dd>
+								</dl>
+								<dl class="dlStyle">
+									<dt>휴대전화</dt>
+									<dd>010-0000-0000</dd>
+								</dl>
+								<dl class="dlStyle">
+									<dt>e-mail</dt>
+									<dd>abcdef@abcdef.co.kr</dd>
+								</dl>
+								<dl class="dlStyle inputCase">
+									<dt>주민등록 번호</dt>
+									<dd>
+										<label for="inp1" class="inputLb numPopLb">
+											<input type="text" id="inp1" placeholder="클릭해주세요" readonly>
+										</label>
+									</dd>
+								</dl>
+								<dl class="dlStyle">
+									<dt>매수인유형</dt>
+									<dd>개인 명의 구입 시 영수증 발급</dd>
+								</dl>
+							</div>
+							<!---->
+							<div class="signSet">
+								<div class="signItem name"><!-- 2020-05-06 -->
+									<p>고객님의 이름은 반드시 3획 이상 작성해주시기 바랍니다.</p><!-- 2020-05-06 -->
+									<div>
+										<span class="signDim" style="display:none">서명활성화 버튼을 이용하여<br/>서명오염을 방지합니다.</span>
+										<span></span>
+										<strong>홍길동</strong><!-- 2020-05-06 -->
+									</div>
+									<button class="btnS lineYellow">전체삭제</button>
+									<button class="btnS lineYellow">부분삭제</button>
+									<button class="btnS lineGray singToggleBtn">서명활성화</button>
+								</div>
+								<div class="signItem">
+									<div>
+										<span class="signDim">서명활성화 버튼을 이용하여<br/>서명오염을 방지합니다.</span>
+										<span></span>
+										<strong><em>매수인</em>서명</strong>
+									</div>
+									<button class="btnS lineYellow">전체삭제</button>
+									<button class="btnS lineYellow">부분삭제</button>
+									<button class="btnS lineGray singToggleBtn">서명활성화</button>
+								</div>
+							</div>
+							<h3>[매도인]</h3>
+							<div class="must">
+								부산시 강서구 르노삼성대로 61<br/>
+								르노삼성자동차주식회사  대표이사 도미닉 시뇨라
+							</div>
+							<!-- 2020-05-04 div 한번더 감싸기 -->
+							<div>
+								<h3>[신용제공자(할부금융사)]</h3>
+								<div class="must">
+									[08592] 서울특별시 금천구 가산디지털2로 30<br/>
+									(가산동, RSM타워 9층)<br/>
+									RCI 파이낸셜서비스코리아  ㈜ 대표이사 프랑크 말로셰
+								</div>
+							</div>
+							<!--//2020-05-04 -->
+							<h3>[영업담당]</h3>
+							<div class="must">
+								르노삼성자동차(주) 지점명<br/>
+								<!-- 02-000-0000<br/> -->
+								ecommerce@renaultsamsungm.com
+							</div>
+							<!--<div class="recantBtn"><button class="btnS yellow">계약철회 신청하기</button></div> 2020-04-23-->
+							<!---->
+							<div class="btnSet">
+								<button class="btnL gray" onClick="location.href='step01_agreement.html'">이전</button>
+								<button class="btnL yellow" onClick="location.href='step03_lemon.html'">다음</button>
+							</div>
+							<!---->
+						</article>
+                    </div>
+            	</section>
+            </div>
+            <!---->
+        </div>
+        <!-- //wrap -->
+		<div class="popupDim" style="display:none;">
+			<div class="popSMCase numberPop" style="display:none;">
+				<div class="popBack">
+					<div class="topBox">
+						<div class="pkSelect">
+							<div>
+								<h1>주민등록번호</h1>
+							</div>
+						</div>
+						<div class="secret">
+							<span class="end"><input type="text" value="9"/></span>
+							<span class="end"><input type="text" value="4"/></span>
+							<span class="end"><input type="text" value="0"/></span>
+							<span class="now"><input type="text" value="" maxlength="1"/></span>
+							<span><input type="text" /></span>
+							<span><input type="text" /></span>
+							<em>-</em>
+							<strong><input type="password" value="9" /></strong>
+							<strong><input type="password" value="9" /></strong>
+							<strong><input type="password" value="9" /></strong>
+							<strong><input type="password" value="9" /></strong>
+							<strong><input type="password" value="9" /></strong>
+							<strong><input type="password" value="9" /></strong>
+							<strong><input type="password" value="9" /></strong>
+						</div>
+					</div>
+					<div class="keypad">
+						<div class="keyBack">
+							<ul>
+								<li><input type="button" class="number" value="1" /></li>
+								<li><input type="button" class="number" value="2" /></li>
+								<li><input type="button" class="number" value="3" /></li>
+								<li><input type="button" class="number" value="4" /></li>
+								<li><input type="button" class="number" value="5" /></li>
+								<li><input type="button" class="number" value="6" /></li>
+								<li><input type="button" class="number" value="7" /></li>
+								<li><input type="button" class="number" value="8" /></li>
+								<li><input type="button" class="number" value="9" /></li>
+								<li><input type="button" class="reset" value="초기화" /></li>
+								<li><input type="button" class="number" value="0" /></li>
+								<li><input type="button" class="back" value="지우기" /></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!---->
+				<div class="btn">
+					<button class="btnS lineGray">취소</button>
+					<button class="btnS yellow numPopChk">확인</button>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8"> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>르노삼성자동차 SSMS</title>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/duDatepicker.css">
+		<!-- js libs -->
+		<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.4.0.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/duDatepicker.js"></script>
+		<script src="js/basic.js"></script>
+		<script>
+			$(document).ready(function(){
+			}); 
+		</script>
+	</head>
+	<body>		
+		<div id="wrap">
+			<!-- menu -->
+			<div class="mobileMenu" style="display:none;">
+				<header>
+				<div id="header">
+					<h1>
+						<img src="images/img_logo.png" alt="르노삼성자동차 e-BEST" />
+					</h1>
+					<nav>
+						<div class="gnb">
+							<!-- gnbMenu -->
+							<ul class="firstGnb">
+								<li class="snbCase on"><a href="tps_list.html"><span><strong>관리화면</strong></span></a></li>
+							</ul>
+							<!-- //gnbMenu -->
+						</div>
+					</nav>
+				</div>
+				</header>
+			</div>
+			<!---->
+			<!-- container -->
+			<div id="container">
+				<section>
+					<div class="head" style="display:none;">
+						<div class="back">
+							<h2><strong>관리화면</strong></h2>
+							<div class="rBtn MrBtn">
+								<div>
+									<span><input type="button" value="로그아웃" class="btnLogout" onclick="location.href='login.html' "/></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!---->
+					<article>
+						<div class="comLayout">
+							<div class="root" style="display:none;">
+								<div class="rootBack">
+									<span class="pagePos"><a class="rootTit"></a><a  class="list">관리화면</a><span>검색 목록 조회</span></span>
+								</div>
+							</div>
+							<div class="contents">
+								<!-- boardTop -->
+								<div class="boardTop">
+									<div class="left">전체 <span>822</span>개</div>
+									<div class="right">
+										<!--검색 -->
+										<div class="list-search">
+											<span class="calArea">
+												<span class="calSet"><input type="text" class="cal" value="2018-03-02" /><button class="btnCal"></button></span>
+												 ~ 
+												<span class="calSet"><input type="text" class="cal" /><button class="btnCal"></button></span>
+											</span>
+											<div>
+												<input type="text" placeholder="검색어를 입력하세요" />
+												<button class="btnL">새로고침</button>
+											</div>
+											<span>
+												<span class="radioSet"><input type="radio" id="" checked><label for=""><i></i>전체</label></span>
+												<span class="radioSet"><input type="radio" id=""><label for=""><i></i>Apply</label></span>
+												<span class="radioSet"><input type="radio" id=""><label for=""><i></i>Activated</label></span>
+												<span class="radioSet"><input type="radio" id=""><label for=""><i></i>Deactivated</label></span>
+												<span class="radioSet"><input type="radio" id=""><label for=""><i></i>Retire</label></span>
+											</span>
+											<button class="btnC blue">SERACH</button>
+										</div>
+										<!-- //검색 -->
+									</div>
+								</div>
+								<!--// boardTop -->
+								<!--Board List-->
+								<div class="rsls1">
+									<table cellpadding="0" cellspacing="0" border="0">
+										<colgroup>
+											<col width="20%" />
+											<col width="20%" />
+											<col width="10%" />
+											<col width="20%" />
+											<col width="10%" />
+											<col width="10%" />
+											<col width="10%" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th>차대번호(VIN)</th>
+												<th>ICCID</th>
+												<th>CUSTOMER</th>
+												<th>IMIEI</th>
+												<th>SIM State</th>
+												<th>Service<br/>State</th>
+												<th>개인정보수집<br/>동의서</th>
+											</tr>
+										</thead>
+										<tbody>
+											<!-- Loop -->
+											<tr>
+												<td><a href="tps_view.html">FVO1234567890</a></td>
+												<td>98740282734482719203</td>
+												<td>홍길동</td>
+												<td>4500089990291827</td>
+												<td>Activated</td>
+												<td>Activated</td>
+												<td>YYY</td>
+											</tr>
+											<!-- //Loop -->
+										</tbody>
+									</table>
+								</div>
+								<!--Paginate-->
+								<div class="paginate">
+									<span>
+										<a class="first">처음</a>
+										<a class="prev">이전</a>
+											<a class="on">1</a>
+											<a>2</a>
+											<a>3</a>
+											<a>4</a>
+											<a>5</a>
+										<a class="next">다음</a>
+										<a class="last">마지막</a>
+									</span>
+								</div>
+								<!--//-->
+							</div>
+							<!-- //contents -->
+						</div>
+					</article>
+					<!---->
+				</section>
+			</div>
+			<!-- //container -->
+		</div>
+	</body>
+</html>

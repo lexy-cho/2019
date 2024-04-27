@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no"/>
+		<title>르노삼성자동차 e-Commerce</title>
+		<!-- <link rel="stylesheet" type="text/css" href="../css/font.css" /> -->
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.4.0.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$('.contractGo').click(function(){
+				$('#contractGo').css('display','block');
+				$('body').css('overflow','hidden');
+			});
+			$('.infoGo').click(function(){
+				$('#infoGo').css('display','block');
+				$('body').css('overflow','hidden');
+			});
+			$(".fullPopup .btnclose").click(function(){
+				$('.agreeDTBack').hide();
+				$('.fullPopup').hide();
+				$('body').css('overflow','inherit');
+			}); //팝업닫기 샘플
+		});
+		</script>
+    </head>
+    <body>
+        <!-- wrap -->
+        <div id="wrap">
+       		<!-- <div id="header">
+                <button class="btnBack" onClick="location.href='noSub_main.html'">이전</button>
+                <h1>내 차 온라인 구매</h1>
+        	</div> -->
+       		<!---->
+            <div id="container">
+            	<section>
+                    <div class="checkLayout">
+						<article>
+							<div class="main_info">
+								<p>온라인 전자계약서 제출이 된 차량정보 입니다. <br/>계약정보 전체보기를 통해 <br/>차량 상세 내용을 확인할 수 있습니다.</p> <!-- 2020-05-06 -->
+								<img src="https://www.renaultsamsungm.com/upload/asset/sm5/color/big_GXA.png" alt="SM5">
+							</div>
+							<div class="add_option">
+								<span class="step ok">계약</span>
+								<span class="step payment" style="left:65px;">차량 준비 및 결제</span>
+								<span class="step delivery" style="left:187px;">배송 및 인수대기</span>
+								<span class="step recant" style="left:187px;">계약철회 진행 중</span><!-- 2020-04-22 -->
+								<dl class="dlStyle2 head">
+									<dt class="lh2"><strong>SM5 classic</strong></dt>
+								</dl>
+								<dl class="dlStyle">
+									<dt>색상 (내장/외장)</dt>
+									<dd>클라우드 펄/시에나 브라운 가죽시트</dd>
+								</dl>
+								<dl class="dlStyle">
+									<dt>선택용품</dt>
+									<dd>선택용품</dd>
+								</dl>
+								<dl class="dlStyle">
+									<dt>선택사양</dt>
+									<dd>선택사양</dd>
+								</dl>
+								<dl class="dlStyle">
+									<dt>인도지점</dt>
+									<dd>강남대리점</dd>
+								</dl>
+								<dl class="dlStyle2 total">
+									<dt class="lh2"><strong>차량 총 계약 금액</strong> <span class="red">23,846,000</span></dt>
+								</dl>
+								<dl class="dlStyle2 total">
+									<dt class="lh2"><strong>등록비</strong><span class="red">1,764,044</span></dt>
+								</dl>
+								<div class="btnSet tC">
+									<button class="btnM yellow contractGo">계약서 다시보기</button>
+									<button class="btnM yellow infoGo">계약정보 전체보기</button>
+									<button class="btnM gray last" onClick="location.href='recant.html'">계약취소</button><!-- 2020-05-06 -->
+								</div>
+							</div>
+							<div class="noticeSet" style="display:none;">
+								<button class="btnL blue">전자계약서 작성</button>
+								<dl class="noticeDl">
+									<dt>
+										<strong>주의사항</strong>
+									</dt>
+									<dd>
+										계약정보가 변경되었습니다. <br/>
+										<br/>최종 계약서 정보로 다시 한번 전자계약서 작성을 진행해 주시기 바랍니다. <br/>
+										<br/>계약서 정보와 관련 변동사항은 <span class="hpyCare">전문 상담사</span>를 통해 문의해주시기 바랍니다.<br/><br/>문의처 : ecommerce@renaultsamsungm.com <!-- 2020-04-24 -->
+									</dd>
+								</dl>
+								<!-- <button href="recant.html" class="btnS yellow">계약철회 신청하기</button>2020-04-22 -->
+							</div>
+							<div class="noticeSet">
+								<button class="btnL blue">최종계약서 다운로드</button>
+								<dl class="noticeDl">
+									<dt>
+										<strong>주의사항</strong>
+									</dt>
+									<!-- 2020-04-22 -->
+									<dd>
+										온라인 전자계약서 작성이 완료되었습니다. <br/><!-- 2020-05-06 -->
+										<br/>최종계약서는 PDF형식이며, 다운로드 받은 PDF는  위변조 확인이 가능합니다. 위변조확인은 홈페이지를 참고하시기 바랍니다. <br/>
+										<br/>관련 문의사항은 <span class="hpyCare">전문 상담사</span>를 통해 문의해주시기 바랍니다.<br/><br/>문의처 : ecommerce@renaultsamsungm.com <!-- 2020-04-24 -->
+									</dd>
+									<!-- //2020-04-22 -->
+								</dl>
+								<!-- <button class="btnS yellow">계약철회 신청하기</button>2020-04-22 -->
+							</div>
+							<!-- 2020-04-22 -->
+							<div class="noticeSet" style="display:none;">
+								<button class="btnL blue" onClick="location.href='recant.html'">계약철회통지서 작성</button>
+								<dl class="noticeDl">
+									<dt>
+										<strong>주의사항</strong>
+									</dt>
+									<dd>
+										계약철회 절차가 진행중인 계약건 입니다.<br/><br/>
+										관련 절차 및 문의사항은 <span class="hpyCare">전문 상담사</span>를 통해 문의해주시기 바랍니다.<br/><br/>문의처 : ecommerce@renaultsamsungm.com <!-- 2020-04-24 -->
+									</dd>
+								</dl>
+							</div>
+							<!-- //2020-04-22 -->
+						</article>
+                    </div>
+            	</section>
+            </div>
+            <!---->
+        </div>
+        <!-- //wrap -->
+		<div class="fullPopup" id="contractGo" style="display:none;">
+			<div class="fheader">
+				<button class="btnclose"></button>
+				<h1>계약서 다시보기</h1>
+			</div>
+			<div class="fcontents">
+				<div class="reportViewArea">
+					<img src="../images/reportView2.png" alt="" />
+					<img src="../images/reportView3.png" alt="" />
+					<img src="../images/reportView4.png" alt="" />
+					<img src="../images/reportView5.png" alt="" />
+				</div>
+			</div>
+		</div>
+		<div class="fullPopup" id="infoGo" style="display:none;">
+			<div class="fheader">
+				<button class="btnclose"></button>
+				<h1>계약정보 전체보기</h1>
+			</div>
+			<div class="fcontents">
+				<div class="contractViewArea">
+					<div class="contractLayout">
+						<h3>[차량사항]</h3>
+						<div class="carInfo">
+							<dl class="dlStyle">
+								<dt>차종</dt>
+								<dd>QM6 GDe 2WD RE Signature 20MY</dd>
+							</dl>
+							<dl class="dlStyle">
+								<dt>색상 (내장/외장)</dt>
+								<dd>클라우드 펄/시에나 브라운 가죽시트</dd>
+							</dl>
+							<dl class="dlStyle">
+								<dt>선택용품</dt>
+								<dd>스마트 커넥트</dd>
+							</dl>
+							<dl class="dlStyle">
+								<dt>선택사양</dt>
+								<dd>L47 알루미늄 페달, AVM 세트 + AXS 네비 본체 (샤크), 용품사양 추가 정보가 노출되는 영역 L47 알루미늄 페달, AVM 세트 + AXS 네비 본체 (샤크), 용품사양 추가 정보가 노출되는 영역 </dd>
+							</dl>
+							<dl class="dlStyle">
+								<dt>수량</dt>
+								<dd>1대</dd>
+							</dl>
+							<dl class="dlStyle">
+								<dt>면세여부</dt>
+								<dd>
+									<span class="radioSet">
+										<input type="radio" id="radio1" name="rd" checked disabled>
+										<label for="radio1"><i></i>과세</label>
+									</span>
+									<span class="radioSet">
+										<input type="radio" id="radio2" name="rd" disabled>
+										<label for="radio2"><i></i>감세</label>
+									</span>
+									<span class="radioSet">
+										<input type="radio" id="radio3" name="rd" disabled>
+										<label for="radio3"><i></i>면세</label>
+									</span>
+									<span class="radioSet">
+										<input type="radio" id="radio4" name="rd" disabled>
+										<label for="radio4"><i></i>영세</label>
+									</span>
+								</dd>
+							</dl>
+							<dl class="dlStyle">
+								<dt>자동차등록</dt>
+								<dd>
+									<span class="radioSet">
+										<input type="radio" id="radio11" name="rd2" checked disabled>
+										<label for="radio11"><i></i>위탁(대행)</label>
+									</span>
+									<span class="radioSet">
+										<input type="radio" id="radio12" name="rd2" disabled>
+										<label for="radio12"><i></i>본인</label>
+									</span>
+								</dd>
+							</dl>
+							<dl class="dlStyle">
+								<dt>인도예정일</dt>
+								<dd>2019-00-00</dd>
+							</dl>
+							<dl class="dlStyle">
+								<dt>인도장소</dt>
+								<dd>
+									<span class="radioSet">
+										<input type="radio" id="radio21" name="rd3" checked disabled>
+										<label for="radio21"><i></i>지점(수완지점)</label>
+									</span>
+									<span class="radioSet">
+										<input type="radio" id="radio22" name="rd3" disabled>
+										<label for="radio22"><i></i>기타</label>
+									</span>
+								</dd>
+							</dl>
+						</div>
+						<h3>[판매가격]</h3>
+						<div class="price">
+							<dl class="dlStyle">
+								<dt>기본가격 (원)</dt>
+								<dd>30,000,000</dd>
+							</dl>
+							<dl class="dlStyle">
+								<dt>선택사양 (원)</dt>
+								<dd>4,080,000</dd>
+							</dl>
+							<dl class="dlStyle">
+								<dt>선택용품 (원)</dt>
+								<dd>1,500,000</dd>
+							</dl>
+							<dl class="dlStyle">
+								<dt>해피케어상품</dt>
+								<dd class="twoLine">
+									<div class="first">
+										<span class="checkSet">
+											<input type="checkbox" id="chk31" checked disabled>
+											<label for="chk31"><i></i>보증연장</label>
+										</span>
+										<span class="checkSet">
+											<input type="checkbox" id="chk32" disabled>
+											<label for="chk32"><i></i>안심관리</label>
+										</span>
+										<span class="checkSet">
+											<input type="checkbox" id="chk33" disabled>
+											<label for="chk33"><i></i>프리미엄</label>
+										</span>
+									</div>
+									<div class="last">
+										1,000,000
+									</div>
+								</dd>
+							</dl>
+							<div class="price line">
+								<dl class="dlStyle carPrice">
+									<dt>차량가격 (계)</dt>
+									<dd>33,200,000</dd>
+								</dl>
+								<div class="markArea">
+									<dl class="dlStyle plus">
+										<dt>탁송료</dt>
+										<dd>150,000</dd>
+									</dl>
+									<dl class="dlStyle minus">
+										<dt>매출 A/C (할인)</dt>
+										<dd>3,530,000</dd>
+									</dl>
+									<dl class="dlStyle total">
+										<dt><strong>판매가격 (계)</strong></dt>
+										<dd><strong>29,820,000</strong></dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+						<h3>[지불조건]</h3>
+						<div class="price">
+							<dl class="dlStyle">
+								<dt>계약금 (원)</dt>
+								<dd>30,000,000</dd>
+							</dl>
+							<dl class="dlStyle">
+								<dt>인도금 (원)</dt>
+								<dd>4,080,000</dd>
+							</dl>
+							<dl class="dlStyle">
+								<dt>지불수단</dt>
+								<dd>
+									<span class="radioSet">
+										<input type="radio" id="radio41" name="rd4"disabled>
+										<label for="radio41"><i></i>현금</label>
+									</span>
+									<span class="radioSet">
+										<input type="radio" id="radio42" name="rd4" checked  disabled>
+										<label for="radio42"><i></i>할부</label>
+									</span>
+									<!-- <span class="radioSet">
+										<input type="radio" id="radio43" name="rd4" disabled>
+										<label for="radio43"><i></i>리스</label>
+									</span> -->
+								</dd>
+							</dl>
+							<dl class="dlStyle on"><!-- 할부일 경우 on class 추가 -->
+								<dt>할부금 (원)</dt>
+								<dd>29,820,000</dd>
+							</dl>
+							<div class="box"><!-- 할부일 경우 show -->
+								<dl class="dlStyle">
+									<dt>금융사명</dt>
+									<dd>RCI</dd>
+								</dl>
+								<dl class="dlStyle">
+									<dt>상품명</dt>
+									<dd>저리할부</dd>
+								</dl>
+								<div class="line">
+									<dl class="dlStyle">
+										<dt>할부원금 (원)</dt>
+										<dd>20,230,000 원<br/>36개월 / 5.5%</dd>
+									</dl>
+									<dl class="dlStyle">
+										<dt>월할부금 (원)</dt>
+										<dd>365,000</dd>
+									</dl>
+									<dl class="dlStyle">
+										<dt>할부총액 (계)</dt>
+										<dd>26,810,000</dd>
+									</dl>
+								</div>
+							</div>
+							<!-- <dl class="dlStyle">
+								<dt>선포인트 할인 (원)</dt>
+								<dd>0</dd>
+							</dl> 2020-05-06 -->
+							<dl class="dlStyle">
+								<dt>적립카드포인트 (원)</dt>
+								<dd>0</dd>
+							</dl>
+							<div class="line">
+								<dl class="dlStyle total">
+									<dt><strong>지불총액 (계)</strong></dt>
+									<dd><strong>29,820,000</strong></dd>
+								</dl>
+							</div>
+						</div>
+						<h3>[계약금 영수증]</h3>
+						<div class="receipt price">
+							<dl class="dlStyle">
+								<dt>영수금액</dt>
+								<dd>10,000 원</dd>
+							</dl>
+							<p class="box">
+								본 영수금액은 청약 결제금액 입니다.<br/>
+								결제수단 : KAKAOPAY  /  결제일 : 2019-00-00
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>
